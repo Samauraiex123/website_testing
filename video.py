@@ -27,6 +27,9 @@ def main():
     owner = "streamlit"
     repo = "streamlit"
 
+    if st.button("Back to About Me"):
+        st.session_state.current_page = "main"
+        st.experimental_rerun()
     events = fetch_github_events()
 
     if "error" not in events:
@@ -41,9 +44,6 @@ def main():
     else:
         st.write(events["error"])
     
-    if st.button("Back to Main Page"):
-        st.session_state.current_page = "main"
-        st.experimental_rerun()
 
 if __name__ == "__main__":
     main()
