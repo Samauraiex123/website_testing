@@ -87,7 +87,7 @@ def main():
     st.markdown("<div class='centered-text'>Hello! I'm Ethan, and I kind of(EMPHASIS ON KIND) like coding games. A few years ago I used to do it on Scratch, but I quickly moved on to python. I also do the bare minimum of graphic design for these said games, as indicated by these pngs below(It doesn't help that I STILL draw these pngs on SCRATCH). The captions below are meant to give you an idea of my personal game-coding timeline.<div>", unsafe_allow_html=True)
 
     #Photo Gallery
-    photos = ["/Users/thaonguyen/Downloads/Platformer/Ball.png", "/Users/thaonguyen/Downloads/Platformer/DemonLeft.png", "/Users/thaonguyen/Downloads/for slides.png", "/Users/thaonguyen/Downloads/Knight & Link.png"]
+    photos = ["assets/Ball.png", "assets/DemonLeft.png", "assets/for slides.png", "assets/Knight & Link.png"]
     cols = st.columns(4)
 
     captions = [
@@ -118,7 +118,7 @@ def main():
         st.write("(The voices in your head tell you to click the button.)")
     else:
         st.write("HAHA YOU GOT JUMPSCARED BY ME AND MY PLUSHIES! Not my proudest picture though...;-;")
-        st.image("/Users/thaonguyen/Desktop/JUMPSCARE.png", use_column_width=True)
+        st.image("assets/JUMPSCARE.png", use_column_width=True)
     
 
 if __name__ == "__main__":
